@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+
+
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:translationZ="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/earncoint_list_item_button_imageview"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@id/earncoint_list_item_button_imageview"
+        android:text="1111"
+        android:translationZ="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:id="@+id/earncoint_list_item_button_textview"
+        />
+
+    <View
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/earncoint_list_item_view"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_start_page_button_white_background"
+        />
+
+    <ImageButton
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/earncoint_list_item_button"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/earncoint_list_item_view"
+        android:background="?android:selectableItemBackground"
+        android:scaleType="fitXY"
+        android:src="@drawable/play" />
+
+</RelativeLayout>

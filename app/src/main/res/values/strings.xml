@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PSN Gift Cards Generator</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="instruction_1">1. Complete easy tasks and get coins.</string>
+    <string name="instruction_2">2. Generate your personal promo code.</string>
+    <string name="instruction_3">3. Exchange earned coins for free coupons with generated code.</string>
+    <string name="instruction_4">4. We will send your coupon with promo code to your email andres.</string>
+    <string name="instruction_5">5. Share received promo code to you friends to use it on PlayStation Network.</string>
+    <string name="instruction_6">6. They only need to charge their accounts to have fun together.</string>
+</resources>

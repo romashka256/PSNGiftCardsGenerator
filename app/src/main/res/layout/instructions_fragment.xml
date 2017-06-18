@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <include
+        layout="@layout/instructions_fragment_item"></include>
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="18dp"
+        android:layout_width="310dp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:text="@string/instruction_1"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <include
+        layout="@layout/instructions_fragment_item"></include>
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="18dp"
+        android:layout_width="310dp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:text="@string/instruction_2"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <include
+        layout="@layout/instructions_fragment_item"></include>
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="18dp"
+        android:layout_width="310dp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:text="@string/instruction_3"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <include
+        layout="@layout/instructions_fragment_item"></include>
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="18dp"
+        android:layout_width="310dp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:text="@string/instruction_4"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <include
+        layout="@layout/instructions_fragment_item"></include>
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="18dp"
+        android:layout_width="310dp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:text="@string/instruction_5"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <include
+        layout="@layout/instructions_fragment_item"></include>
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="18dp"
+        android:layout_width="310dp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:text="@string/instruction_6"/>
+    </RelativeLayout>
+</LinearLayout>

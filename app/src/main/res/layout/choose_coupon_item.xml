@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="57dp"
+    android:paddingTop="20dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/cupon_background"/>
+
+    <TextView
+        android:id="@+id/discount_item_textview"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="50%"
+        android:textColor="#fff"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/discount_item_imageview"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/discount_item_textview" />
+
+    <TextView
+        android:id="@+id/discount_item_textview_coins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/discount_item_imageview"
+        android:hint="28000 Coins"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/discount_item_textview_coins"
+        android:src="@drawable/coin" />
+
+
+
+</RelativeLayout>

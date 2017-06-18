@@ -1,0 +1,1 @@
+include ':app', ':NativeXMonetizationSDK_v5.5.9', ':gson-2.3.1', ':AdxmiSdk_v6.0.0_2016-10-21'
