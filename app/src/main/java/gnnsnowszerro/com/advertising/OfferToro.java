@@ -50,8 +50,7 @@ public class OfferToro {
 
             @Override
             public void onOTOfferWallCredited(double credits, double totalCredits) {
-                Log.i(TAG, "credits = " + credits +
-                        "\ntotalCredits = " + totalCredits);
+                Log.i(TAG, "credits = " + credits + " ----- totalCredits = " + totalCredits);
                 storeCoins.updateOfferToroCoinsCount((int) totalCredits);
             }
 

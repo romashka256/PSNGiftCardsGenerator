@@ -6,12 +6,10 @@
 
    <ListView
        android:id="@+id/list_view_choose_coupon_fragment"
-       android:paddingTop="10dp"
+       android:scrollbars="none"
        android:divider="@null"
        android:layout_centerInParent="true"
        android:layout_width="340dp"
        android:layout_height="match_parent"></ListView>
-
-
 
 </RelativeLayout>

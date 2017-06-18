@@ -7,5 +7,6 @@ package gnnsnowszerro.com.viewpager;
 public interface IViewPager {
     void onInstallClicked();
     void onPrivacyClicked();
+    void onCoinsCountChanged();
     void onBannerLoaded(String name,String rating,String buttonText,String imgUrl);
 }

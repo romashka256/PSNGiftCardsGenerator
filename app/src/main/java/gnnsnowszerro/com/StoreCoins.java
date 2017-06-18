@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
 
-public class StoreCoins {
+public class StoreCoins  {
 
     private static final String TAG = "###" + "CoinsManager";
     private SharedPreferences.Editor editor;
@@ -12,11 +12,17 @@ public class StoreCoins {
 
     private int PRIVATE_MODE = 0;
 
+    private IOnCountCoinsLisntener onCountCoinsLisntener;
     private static final String PREF_NAME = "CoinsCount";
     public static final String COINS_COUNT = "TotalCoinsCount";
     private static final String OFFER_TORE_COINS_COUNT = "OfferToroCoinsCount";
     private static final String ADXMI_COINS_COUNT = "ADXMICoinsCount";
 
+    public StoreCoins(Context context,IOnCountCoinsLisntener onCountCoinsLisntener) {
+        pref = context.getSharedPreferences(PREF_NAME, PRIVATE_MODE);
+        editor = pref.edit();
+        this.onCountCoinsLisntener= onCountCoinsLisntener;
+    }
     public StoreCoins(Context context) {
         pref = context.getSharedPreferences(PREF_NAME, PRIVATE_MODE);
         editor = pref.edit();
@@ -27,6 +33,7 @@ public class StoreCoins {
         Log.i(TAG, "Updated coins count +" + earnedCoins);
         editor.putInt(COINS_COUNT, totalCoins);
         editor.commit();
+        onCountCoinsLisntener.onCountCoinsChanged();
     }
 
     public void updateOfferToroCoinsCount(int offerToroCount){
@@ -37,6 +44,7 @@ public class StoreCoins {
             updateCoinsCount(earnCoins);
             editor.commit();
         }
+        onCountCoinsLisntener.onCountCoinsChanged();
     }
 
     public void updateAdxmiCoinsCount(int AdxmiCount){
@@ -47,6 +55,7 @@ public class StoreCoins {
             updateCoinsCount(earnCoins);
             editor.commit();
         }
+        onCountCoinsLisntener.onCountCoinsChanged();
     }
 
     public int getCoinsCount() {

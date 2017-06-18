@@ -20,8 +20,7 @@ import gnnsnowszerro.com.generate.GenerateActivity;
 
 public class ChooseCouponFragment extends Fragment implements IChooseCouponView{
 
- //   @BindView(R.id.count_coins_textview)
- //   TextView mCountOfCoinsTextView;
+
     @BindView(R.id.list_view_choose_coupon_fragment)
     ListView mListOfCoupons;
 

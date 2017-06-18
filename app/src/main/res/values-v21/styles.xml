@@ -9,4 +9,5 @@
         <item name="android:homeAsUpIndicator">@drawable/back_row</item>
         <item name="android:statusBarColor">@color/colorToolBar</item>
     </style>
+
 </resources>

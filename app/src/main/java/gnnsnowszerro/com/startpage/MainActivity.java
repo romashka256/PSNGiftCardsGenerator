@@ -23,10 +23,13 @@ public class MainActivity extends AppCompatActivity implements IStartPage {
     private SharedPreferences settings = null;
     private SharedPreferences.Editor editor = null;
     private final static String TAG = "MainActivity";
+    private final String AdxmiAPP_ID = "01bc87913a968e80";
+    private final String AdxmiAPP_SECRET = "19edf67159c7e389";
 
 
     @BindView(R.id.get_started_button)
     Button mGetStartedButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +42,7 @@ public class MainActivity extends AppCompatActivity implements IStartPage {
 
         ButterKnife.bind(this);
 
-
-        AdManager.getInstance(this).init("01bc87913a968e80", "19edf67159c7e389");
+        AdManager.getInstance(this).init(AdxmiAPP_ID,AdxmiAPP_SECRET);
         AdManager.getInstance(this).setEnableDebugLog(false);
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -66,8 +68,10 @@ public class MainActivity extends AppCompatActivity implements IStartPage {
 
     @Override
     public void onButtonClicked() {
+
         Intent intent = new Intent(this, ViewPagerActivity.class);
         startActivity(intent);
+
     }
 
     public void recordRunTime() {

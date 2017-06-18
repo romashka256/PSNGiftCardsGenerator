@@ -13,7 +13,7 @@ import gnnsnowszerro.com.StoreCoins;
  * Created by Roma on 17.06.2017.
  */
 
-public class AdColonyAds {
+public class AdColonyAds{
 
     private final int reward = 10;
     private  final String ZONE_ID = "vzac61b40e83e8436c9e";
